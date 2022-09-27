@@ -9,13 +9,12 @@ DEVICE_PATH := device/xiaomi/apollo
 # Inherit from sm8250-common
 include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 BUILD_BROKEN_DUP_RULES := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
-
-# Inherit from proprietary files for miuicamera
--include vendor/xiaomi/apollo_miuicamera/products/board.mk
 
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
