@@ -21,10 +21,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     RemovePackagesDolby
 
-# GCamGo
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V3_8
-
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -50,6 +46,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Camera Extensions permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/camerax-vendor-extensions.xml
+
+# Camera
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
