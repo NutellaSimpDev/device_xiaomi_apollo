@@ -11,11 +11,6 @@ echo 'Cloning Kernel tree [3/5]'
 # Kernel Tree
 git clone https://github.com/VoidUI-Devices/kernel_xiaomi_sm8250.git -b aosp-13 kernel/xiaomi/sm8250
 
-echo 'Cloning CamGo [4/5]'
-# GcamGo
-rm -rf packages/apps/GCamGOPrebuilt
-git clone https://github.com/Evolution-X/packages_apps_GCamGOPrebuilt.git packages/apps/GCamGOPrebuilt
-
 echo 'Cloning ViperFX [5/5]'
 # Kernel Tree
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
