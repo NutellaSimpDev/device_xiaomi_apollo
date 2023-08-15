@@ -11,16 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from apollo device
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common SkylineUI stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-DEVICE_MAINTAINER := Dobsgw
-
+# Rom Specific Flags
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_CHARACTERISTICS := nosdcard
 
-PRODUCT_NAME := arrow_apollo
+PRODUCT_NAME := lineage_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
