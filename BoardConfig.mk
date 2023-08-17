@@ -14,6 +14,17 @@ BUILD_BROKEN_DUP_RULES := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Inherit from proprietary files for miuicamera
+-include vendor/xiaomi/apollo_miuicamera/products/board.mk
+
+# Audio
+TARGET_PROVIDES_AUDIO_EXTNS := true
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
+
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_apollo
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_apollo
