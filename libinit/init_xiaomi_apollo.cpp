@@ -13,6 +13,7 @@ static const variant_info_t apollo_global_info = {
     .hwc_value = "",
     .sku_value = "std",
 
+    .name = "apollo_global",
     .mod_device = "apollo_global",
     .brand = "Xiaomi",
     .device = "apollo",
@@ -27,6 +28,7 @@ static const variant_info_t apollopro_info = {
     .hwc_value = "",
     .sku_value = "pro",
 
+    .name = "apollo_global",
     .mod_device = "apollo_global",
     .brand = "Xiaomi",
     .device = "apollo",
@@ -41,6 +43,7 @@ static const variant_info_t apollo_info = {
     .hwc_value = "",
     .sku_value = "",
 
+    .name = "apollo_global",
     .mod_device = "apollo_global",
     .brand = "Redmi",
     .device = "apollo",
