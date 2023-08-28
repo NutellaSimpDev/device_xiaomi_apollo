@@ -21,6 +21,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     RemovePackagesDolby
 
+# GCamGo
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3_8
+
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
