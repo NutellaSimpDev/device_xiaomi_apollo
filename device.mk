@@ -7,6 +7,9 @@
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
+# Call the ViperFX Config
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/apollo-miuicamera/products/miuicamera.mk)
 
