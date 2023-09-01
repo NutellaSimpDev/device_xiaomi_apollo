@@ -11,7 +11,11 @@ echo 'Cloning Kernel tree [3/4]'
 # Kernel Tree
 git clone https://github.com/VoidUI-Devices/kernel_xiaomi_sm8250.git -b aosp-13 kernel/xiaomi/sm8250
 
-echo 'Cloning Miuicamera [4/4]'
+echo 'Cloning Miuicamera [4/5]'
 # Memecam
-git clone https://gitlab.com/kamikaonashi/apollo-meme-cam.git vendor/xiaomi/apollo-miuicamera
+git clone https://gitlab.com/NutellaSimpDev/vendor_xiaomi_apollo-miuicamera vendor/xiaomi/apollo-miuicamera
+
+echo 'Cloning ViperFX [5/5]'
+# Kernel Tree
+git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git -b v4a packages/apps/ViPER4AndroidFX
 echo 'Completed, Now proceeding to lunch'
