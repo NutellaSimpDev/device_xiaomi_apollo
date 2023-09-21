@@ -18,10 +18,8 @@ TARGET_SCREEN_DENSITY := 440
 
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
-AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/device_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 
 # Init
